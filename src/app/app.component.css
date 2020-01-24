@@ -1,0 +1,25 @@
+ body {
+     margin: 0;
+ }
+ 
+ main {
+     margin: 30px;
+ }
+ 
+ button.username {
+     margin-left: 80%;
+ }
+ 
+ button.menu {
+     margin-left: 5%;
+ }
+ 
+ mat-icon.menuIcon {
+     font-size: 35px;
+ }
+ 
+ mat-icon.userIcon {
+     font-size: 35px;
+     margin-right: 13px;
+     margin-bottom: 8px;
+ }

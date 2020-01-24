@@ -1,0 +1,39 @@
+<div class="courses-panel">
+    <h1>All Groups</h1>
+    <div class="addgroup-component">
+        <addgroup></addgroup>
+    </div>
+
+    <mat-tab-group>
+        <mat-tab label="Ist Year">
+
+            <courses-card-list [courses]="firstYearGroups$ | async"></courses-card-list>
+
+        </mat-tab>
+
+
+        <mat-tab label="II-nd Year">
+
+            <courses-card-list [courses]="secondYearGroups$ | async"></courses-card-list>
+
+        </mat-tab>
+
+
+        <mat-tab label="III-rd Year">
+
+            <courses-card-list [courses]="thirdYearGroups$ | async"></courses-card-list>
+
+        </mat-tab>
+
+        <mat-tab label="IV-th Year">
+
+            <courses-card-list [courses]="fourthYearGroups$ | async"></courses-card-list>
+
+        </mat-tab>
+
+
+    </mat-tab-group>
+
+
+
+</div>

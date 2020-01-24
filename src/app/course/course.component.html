@@ -1,0 +1,185 @@
+<div class="course">
+
+    <h1>{{course?.description}}</h1>
+
+
+    <mat-form-field>
+
+        <input matInput placeholder="Search students" #input>
+
+    </mat-form-field>
+
+    <div class="spinner-container" *ngIf="dataSource.loading$ | async">
+
+        <mat-spinner></mat-spinner>
+
+    </div>
+    <mat-table class="studens-table mat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="seqNo" matSortDirection="asc" matSortDisableClear>
+
+        <ng-container matColumnDef="seqNo">
+
+            <mat-header-cell *matHeaderCellDef mat-sort-header>#</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.seqNo}}</mat-cell>
+
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+
+            <mat-header-cell *matHeaderCellDef>Student Name</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.name}}</mat-cell>
+
+        </ng-container>
+
+        <ng-container matColumnDef="date1">
+
+            <mat-header-cell *matHeaderCellDef>11/01</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.info[1].mark}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="date2">
+
+            <mat-header-cell *matHeaderCellDef>21/01</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.info[2].mark}}</mat-cell>
+
+        </ng-container>
+
+        <ng-container matColumnDef="date3">
+
+            <mat-header-cell *matHeaderCellDef>11/02</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.info[3].mark}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="date4">
+
+            <mat-header-cell *matHeaderCellDef>21/02</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.info[4].mark}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="date5">
+
+            <mat-header-cell *matHeaderCellDef>10/03</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.info[5].mark}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="KPI">
+
+            <mat-header-cell *matHeaderCellDef>KPI</mat-header-cell>
+
+            <mat-cell *matCellDef="let student">{{student.KPI}}</mat-cell>
+
+        </ng-container>
+        <!-- <ng-container matColumnDef="three">
+
+            <mat-header-cell *matHeaderCellDef>11/02</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.three}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="four">
+
+            <mat-header-cell *matHeaderCellDef>21/02</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.four}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="five">
+
+            <mat-header-cell *matHeaderCellDef>14/03</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.five}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="six">
+
+            <mat-header-cell *matHeaderCellDef>22/03</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.six}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="seven">
+
+            <mat-header-cell *matHeaderCellDef>22/03</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.seven}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="eight">
+
+            <mat-header-cell *matHeaderCellDef>01/04</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.eight}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="nine">
+
+            <mat-header-cell *matHeaderCellDef>15/04</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.nine}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="ten">
+
+            <mat-header-cell *matHeaderCellDef>22/04</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.ten}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="eleven">
+
+            <mat-header-cell *matHeaderCellDef>30/04</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.eleven}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="twelve">
+
+            <mat-header-cell *matHeaderCellDef>05/05</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.twelve}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="thirteen">
+
+            <mat-header-cell *matHeaderCellDef>15/05</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.thirteen}}</mat-cell>
+
+        </ng-container>
+        <ng-container matColumnDef="fourteen">
+
+            <mat-header-cell *matHeaderCellDef>30/05</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.fourteen}}</mat-cell>
+
+        </ng-container>
+
+        <ng-container matColumnDef="fifteen">
+
+            <mat-header-cell *matHeaderCellDef>KPI</mat-header-cell>
+
+            <mat-cell class="duration-cell" *matCellDef="let student">{{student.fifteen}}</mat-cell>
+
+        </ng-container> -->
+
+
+
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+
+    </mat-table>
+
+
+    <mat-paginator [length]="course?.studentsCount" [pageSize]="3" [pageSizeOptions]="[3, 5, 10, 15, 20]"></mat-paginator>
+
+
+</div>

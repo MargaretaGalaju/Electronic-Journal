@@ -1,0 +1,38 @@
+.course {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.course-thumbnail {
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+
+/* .description-cell {
+    text-align: left;
+} */
+
+.duration-cell mat-icon {
+    font-size: 20px;
+}
+
+.spinner-container {
+    height: 360px;
+    width: 900px;
+    position: fixed;
+}
+
+.lessons-table {
+    margin-top: 10px;
+}
+
+.spinner-container mat-spinner {
+    margin: 130px auto 0 auto;
+}
